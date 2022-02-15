@@ -1,0 +1,9 @@
+@media(max-width: 500px){
+    .ComputerService{
+        display: none;
+    }
+}
+.ComputerService{
+    width: 30vw !important;
+    height: 10vh !important;
+}
