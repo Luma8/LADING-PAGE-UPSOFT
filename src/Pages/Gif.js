@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+
 import gif1 from '../assets/Gifs/gif1.gif';
 import gif2 from '../assets/Gifs/gif2.gif';
 import gif3 from '../assets/Gifs/gif3.gif';
@@ -15,14 +16,14 @@ export default function Gif() {
                 <div className='container'>
                     <h1>Tecnologias</h1>
                     <div className='container Windowslide space-between mt-5'>
-                        <img src={gif1} className="Gifs" />
-                        <img src={gif4} className="Gifs" />
-                        <img src={gif3} className="Gifs" />
+                        <img src={gif1} alt="gif1" className="Gifs" />
+                        <img src={gif4} alt="gif1" className="Gifs" />
+                        <img src={gif3} alt="gif1" className="Gifs" />
                     </div>
                     <div className='container Windowslide space-between mt-5'>
-                        <img src={gif2} className="Gifs" />
-                        <img src={gif5} className="Gifs" />
-                        <img src={gif6} className="Gifs" />
+                        <img src={gif2} alt="gif1" className="Gifs" />
+                        <img src={gif5} alt="gif1" className="Gifs" />
+                        <img src={gif6} alt="gif1" className="Gifs" />
                     </div>
                 </div>
             </div>

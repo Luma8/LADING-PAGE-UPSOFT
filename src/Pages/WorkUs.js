@@ -1,18 +1,12 @@
 import React from 'react';
 import { HeaderStyle } from "../components/Styles/Styled"
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn, Zoom } from "react-scroll-motion";
+import { Animator, ScrollContainer, ScrollPage, batch, Fade, MoveOut, Sticky, } from "react-scroll-motion";
 import NavBar from "./Navbar";
 import Footer from './Footer';
 //imagens
 import Prof from '../assets/Img/Prof.png';
 
 export default function WorkUs() {
-    //Debugs Particles
-
-    //Animation's
-    const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
-    const FadeUp = batch(Fade(), Move(), Sticky());
-
     return (
         <>
             <HeaderStyle>
@@ -54,7 +48,7 @@ export default function WorkUs() {
                                     <br></br>
                                     <h1>Mussum Ipsum, cacilds vidis litro abe</h1>
                                     <div className='container space-between mt-5'>
-                                        <img className='imgPrograming' src={Prof} />
+                                        <img className='imgPrograming' src={Prof} alt="Pelobemtodos"/>
                                         <div className='encurt-2'>
                                             <p>Mussum Ipsum, cacilds vidis litro abertis. Quem manda na minha
                                                 terra sou euzis!Praesent malesuada urna nisi, quis volutpat erat hendrerit non.

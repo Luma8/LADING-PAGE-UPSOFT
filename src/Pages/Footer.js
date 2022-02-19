@@ -16,19 +16,19 @@ export default function Footer() {
                         <h1>© 2021 Upsoft</h1>
                     </div>
                     <div className='rowS'>
-                        <img src={Whatsaap} />
+                        <img src={Whatsaap} alt="Whatsaap"/>
                         <p>(83)9 3576-5032</p>
                     </div>
                     <div className='rowS'>
-                        <img src={Instagram} />
+                        <img src={Instagram} alt="Instagram"/>
                         <p>@up.softwarehouse</p>
                     </div>
                     <div className='rowS'>
-                        <img src={Facebook} />
+                        <img src={Facebook} alt="Facebook"/>
                         <p>https://www.facebook.com/profile.php?id=100075133330426</p>
                     </div>
                     <div className='rowS'>
-                        <img src={Linkedin} />
+                        <img src={Linkedin} alt="Linkedin"/>
                         <p>(83)9 9999-9999</p>
                     </div>
                 </div>
@@ -53,8 +53,8 @@ const FooterStyle = styled.div`
                 font-size: 20px;
             }
             div.rowS{
-                display: block;s
-                justify-content: 
+                display: block;
+                /* justify-content:  */
             }
             div.DOL{
                 display: flex;

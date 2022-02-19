@@ -1,6 +1,6 @@
 import React from 'react';
 import { HeaderStyle } from "../components/Styles/Styled"
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn, Zoom } from "react-scroll-motion";
+import { Animator, ScrollContainer, ScrollPage, batch, Fade, MoveOut, Sticky, } from "react-scroll-motion";
 import NavBar from "./Navbar";
 import Footer from './Footer';
 import Gif from './Gif';
@@ -15,11 +15,8 @@ import Ideia from '../assets/Img/ProgrammerBro.png';
 import V1 from '../assets/Videos/V1.mp4';
 
 export default function Home() {
-    //Debugs Particles
 
     //Animation's
-    const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
-    const FadeUp = batch(Fade(), Move(), Sticky());
 
     return (
         <>
@@ -32,7 +29,7 @@ export default function Home() {
                             <Animator animation={batch(Sticky(), Fade(), MoveOut(0, 200))}>
                                 <div className="container">
                                     <div className='d-flex justify-content-center'>
-                                        <img src={logo} className="logo" />
+                                        <img src={logo} alt="Logo" className="logo" />
                                     </div>
                                     <h1 className="text-center HeaderTittle">
                                         SOFTWAREHOUSE
@@ -55,7 +52,7 @@ export default function Home() {
                                             <p className='jayce'><h2 className='Subtittle'>Criação e desenvolvimento de soluções digitais para mobile</h2> Transforme a experiência da sua emrpesa através de projetos customizados, proporcionando acessibilidade, mais oportunidade de vendas, rentabilidade, automação e alcance do seu produto. Criando um aplicativo único, personalizado e fortalecendo a sua marca, com uma plataforma intuitia e fácil de usar, tornando o seu sonho em um empreendimento de sucesso.
                                             </p>
                                         </div>
-                                        <img className='imgIdeia' src={Ideia} />
+                                        <img className='imgIdeia' src={Ideia} alt="Ideia" />
                                     </div>
                                 </div>
                             </Animator>
@@ -74,7 +71,7 @@ export default function Home() {
                                                Ajudamos a constuir a sua ideia, pensando no processo e modelo de negócio da sua empresa, focando sempre na otimização e aumento da produtividade, elaborando e publicando o seu projeto do inicio ao fim, utilizando as melhores linguagens e tecnologias, além de estarmos prontos para todo o suporte necessário.
                                             </p>
                                         </div>
-                                        <img className='imgPrograming' src={Programing} />
+                                        <img className='imgPrograming' src={Programing} alt="Programing"/>
                                     </div>
                                 </div>
                             </Animator>

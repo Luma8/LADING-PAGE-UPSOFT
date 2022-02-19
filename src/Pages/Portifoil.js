@@ -1,6 +1,6 @@
 import React from 'react';
 import { HeaderStyle } from "../components/Styles/Styled"
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn, Zoom } from "react-scroll-motion";
+import { Animator, ScrollContainer, ScrollPage, batch, Fade, MoveOut, Sticky} from "react-scroll-motion";
 import NavBar from "./Navbar";
 import Footer from './Footer';
 import ParticlesBackground from '../components/Styles/ParticlesBackground';
@@ -8,16 +8,9 @@ import ParticlesBackground from '../components/Styles/ParticlesBackground';
 import './styles.css';
 import ServiceSuport from '../assets/Img/ServiceSuport.png';
 import Portifolio from '../assets/Img/Portifoil.png'
-import { MdComputer } from 'react-icons/md';
 
 
 export default function Portifoil() {
-    //Debugs Particles
-
-    //Animation's
-    const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
-    const FadeUp = batch(Fade(), Move(), Sticky());
-
     return (
         <>
             <HeaderStyle>
@@ -31,7 +24,7 @@ export default function Portifoil() {
                                     <h1 className="text-center HeaderTittle">
                                         PORTFÓLIO
                                     </h1>
-                                    <img className='Imagecenter' src={Portifolio} />
+                                    <img className='Imagecenter' src={Portifolio} alt="Portifolio"/>
                                 </div>
                             </Animator>
                         </div>
@@ -42,9 +35,9 @@ export default function Portifoil() {
                                 <div className='container'>
                                     <br></br>
                                     <br></br>
-                                    <h1 className='ColorWhite'>Aplicativos</h1>
+                                    <h1>Mussum Ipsum, cacilds vidis litro abe</h1>
                                     <div className='container space-between mt-5'>
-                                        <img className='imgPrograming' src={ServiceSuport} />
+                                        <img className='imgPrograming' src={ServiceSuport} alt="ServiceSuport"/>
                                         <div className='encurt-2'>
                                             <p>Mussum Ipsum, cacilds vidis litro abertis. Quem manda na minha
                                                 terra sou euzis!Praesent malesuada urna nisi, quis volutpat erat hendrerit non.

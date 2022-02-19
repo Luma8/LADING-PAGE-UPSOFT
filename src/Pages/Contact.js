@@ -1,24 +1,21 @@
 import React, { useRef } from 'react';
 import { HeaderStyle } from "../components/Styles/Styled"
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn, Zoom } from "react-scroll-motion";
+import { Animator, ScrollContainer, ScrollPage, batch, Fade, MoveOut, Sticky, } from "react-scroll-motion";
 import NavBar from "./Navbar";
 import Footer from './Footer';
 import ParticlesBackgroundBlack from '../components/Styles/ParticlesBackgroundBlack';
 import emailjs from '@emailjs/browser';
 //imagens
 import './styles.css';
-import ServiceSuport from '../assets/Img/ServiceSuport.png';
-import Portifolio from '../assets/Img/Portifoil.png'
 import ContatoSuport from '../assets/Img/ContatoSuport.png';
-import { MdComputer } from 'react-icons/md';
 
 
 export default function Contacts() {
     //Debugs Particles
 
     //Animation's
-    const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
-    const FadeUp = batch(Fade(), Move(), Sticky());
+    // const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
+    // const FadeUp = batch(Fade(), Move(), Sticky());
 
     const form = useRef();
 
@@ -61,7 +58,7 @@ export default function Contacts() {
                                     <h1 className="text-center HeaderTittle">
                                         CONTATO
                                     </h1>
-                                    <img className='Imagecenter' src={ContatoSuport} />
+                                    <img className='Imagecenter' alt='contatoIMg' src={ContatoSuport} />
                                 </div>
                             </Animator>
                         </div>

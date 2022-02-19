@@ -1,17 +1,14 @@
 import React from 'react';
 import { HeaderStyle } from "../components/Styles/Styled"
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn, Zoom } from "react-scroll-motion";
+import { Animator, ScrollContainer, ScrollPage, batch, Fade, MoveOut, Sticky, } from "react-scroll-motion";
 import NavBar from "./Navbar";
 import Footer from './Footer';
 //imagens
-import Prof from '../assets/Img/Prof.png';
 
 export default function Home() {
     //Debugs Particles
 
     //Animation's
-    const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
-    const FadeUp = batch(Fade(), Move(), Sticky());
 
     return (
         <>
@@ -46,27 +43,7 @@ export default function Home() {
                             </Animator>
                         </div>
                     </ScrollPage>
-                    {/* <ScrollPage page={2}>
-                        <div className='sectionWhite'>
-                            <Animator animation={batch(Fade(), MoveOut(0, 200))}>
-                                <div className='container'>
-                                    <br></br>
-                                    <br></br>
-                                    <h1>Mussum Ipsum, cacilds vidis litro abe</h1>
-                                    <div className='container space-between mt-5'>
-                                        <img className='imgPrograming' src={Prof} />
-                                        <div className='encurt-2'>
-                                            <p>Mussum Ipsum, cacilds vidis litro abertis. Quem manda na minha
-                                                terra sou euzis!Praesent malesuada urna nisi, quis volutpat erat hendrerit non.
-                                                Nam vulputate dapibus.Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus
-                                                tristique interdum.Manduma pindureta quium dia nois paga.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </Animator>
-                        </div>
-                    </ScrollPage> */}
+                   
                 </ScrollContainer>
             </HeaderStyle>
             <Footer />
