@@ -49,7 +49,7 @@ export default function Home() {
                                     <h1 className='colorWhite'>Aplicativos</h1>
                                     <div className='container space-between'>
                                         <div className='encurt'>
-                                            <p className='jayce'><h2 className='Subtittle'>Criação e desenvolvimento de soluções digitais para mobile</h2> Transforme a experiência da sua emrpesa através de projetos customizados, proporcionando acessibilidade, mais oportunidade de vendas, rentabilidade, automação e alcance do seu produto. Criando um aplicativo único, personalizado e fortalecendo a sua marca, com uma plataforma intuitia e fácil de usar, tornando o seu sonho em um empreendimento de sucesso.
+                                            <p className='jayce'><h2 className='Subtittle'>Criação e desenvolvimento de soluções digitais para mobile</h2> Transforme a experiência da sua emrpesa através de projetos customizados, proporcionando acessibilidade, mais oportunidade de vendas, rentabilidade, automação e alcance do seu produto. Criando um aplicativo único, personalizado e fortalecendo a sua marca, com uma plataforma intuitivo e fácil de usar, tornando o seu sonho em um empreendimento de sucesso.
                                             </p>
                                         </div>
                                         <img className='imgIdeia' src={Ideia} alt="Ideia" />
