@@ -17,7 +17,7 @@ export default function Footer() {
                     </div>
                     <div className='rowS'>
                         <img src={Whatsaap} alt="Whatsaap"/>
-                        <p>(83)9 3576-5032</p>
+                        <p>(83)9 3576-5032 ou (83) 988550479</p>
                     </div>
                     <div className='rowS'>
                         <img src={Instagram} alt="Instagram"/>
@@ -27,10 +27,10 @@ export default function Footer() {
                         <img src={Facebook} alt="Facebook"/>
                         <p>https://www.facebook.com/profile.php?id=100075133330426</p>
                     </div>
-                    <div className='rowS'>
+                    {/* <div className='rowS'>
                         <img src={Linkedin} alt="Linkedin"/>
                         <p>(83)9 9999-9999</p>
-                    </div>
+                    </div> */}
                 </div>
             </footer>
         </FooterStyle>
