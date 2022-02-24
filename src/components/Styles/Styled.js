@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Bg2 from '../../assets/background-img/Background1.png';
+import Bg3 from '../../assets/background-img/workus.jpg';
 
 export const HeaderStyle = styled.div`
     div.encurt{
@@ -24,8 +25,94 @@ export const HeaderStyle = styled.div`
     }
     h1.colorBlack{
         color: #0a417e !important;
-        
     }
+    p.TextInside{
+        color: black !important;
+        font-size: 16px !important;
+        @media(width: 2560px){
+            font-size: 20px !important;
+        }
+        @media(max-width: 500px){
+            font-size: 17px !important;
+        }
+        text-align: start;
+    }
+    /* Gambiarra... */
+    div.Inside1{
+        /* Descomentar para reparo */
+        /* background-color: yellow; */
+        position: absolute;
+        top: 300px;
+        width: 27%;
+        margin-left: 10px;
+        @media(width: 2560px){
+            left: 38px;
+        }
+        @media(max-width: 500px){
+            width: 80%;
+            top: 280px;
+            left: 32px;
+        }
+    }
+    div.Inside2{
+        /* Descomentar para reparo */
+        /* background-color: red; */
+        position: absolute;
+        top: 300px;
+        width: 27%;
+        right: 415px;
+        @media(width: 2560px){
+           right: 485px; 
+        }
+        @media(max-width: 500px){
+            width: 80%;
+            top: 900px;
+            left: 32px;
+        }
+        @media(width: 414px){
+            width: 80%;
+            top: 960px;
+            left: 32px;
+        }
+        @media(width: 412px){
+            width: 80%;
+            top: 960px;
+            left: 32px;
+        }
+    }
+    div.Inside3{
+        /* Descomentar para reparo */
+        /* background-color: blue; */
+        position: absolute;
+        top: 300px;
+        width: 27%;
+        right: 23px;
+        margin-left: 6px;
+        @media(width: 2560px){
+            right: 50px; 
+        }
+        @media(max-width: 500px){
+            width: 80%;
+            top: 1500px;
+            left: 32px;
+        }
+        @media(width: 414px){
+            width: 80%;
+            top: 1600px;
+            left: 32px;
+        }
+        @media(width: 393px){
+            width: 80%;
+            top: 1520px;
+            left: 32px;
+        }
+        @media(width: 412px){
+            width: 80%;
+            top: 1620px;
+            left: 32px;
+        }
+    }
+    /*  */
     div.encurt-2{
         width: 40vw;
         @media(max-width: 500px){
@@ -42,7 +129,7 @@ export const HeaderStyle = styled.div`
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-            }  
+            }
     }
     div.space-between2{
         display: flex;
@@ -76,6 +163,17 @@ export const HeaderStyle = styled.div`
         height: 100%;
         color: white;
     }
+    div.SectionWorkUs{
+        background-image: url(${Bg3});
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        color: white;
+            h1{
+                font-size: 55px
+            }
+    }
     div.Windowslide{
         overflow-y: scroll;
         margin-right: 10vw;
@@ -98,7 +196,21 @@ export const HeaderStyle = styled.div`
         height: 100%;
     }
     div.flowpodcast{
-        overflow-y: scroll
+        position: relative;
+        color: white;
+    }
+    img.CardPlan{
+        width: 28vw;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        @media(max-width: 500px){
+            width: 100vw;
+        }
+        @media(max-width: 2560px){
+            display: flex;
+            justify-content: center;
+
+        }
     }
     div.CardBronze{
         border: 3px solid #FF8C8C;
@@ -165,11 +277,18 @@ export const HeaderStyle = styled.div`
     div.spaceAgest{
         margin-right: 5vw;
         margin-left: 5vw;
+            @media(max-width: 1080){
+                margin-right: 10vw;
+                margin-left: 10vw;
+            }
     }
     input.InputInc{
         border: none;
         border-radius: 5px;
         width: 30vw;
+        @media(max-width: 2560px){
+            width: 20vw;
+        }
         @media(max-width: 500px){
         width: 80vw;
         }
@@ -219,6 +338,9 @@ export const HeaderStyle = styled.div`
                     width: 100vw;
                 }
             }
+    }
+    img.panamCont{
+        width: 35vw;
     }
     div.sectionWhite{
         background-color: white;

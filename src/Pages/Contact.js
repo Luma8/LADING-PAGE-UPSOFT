@@ -1,10 +1,11 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { HeaderStyle } from "../components/Styles/Styled"
 import { Animator, ScrollContainer, ScrollPage, batch, Fade, MoveOut, Sticky, } from "react-scroll-motion";
 import NavBar from "./Navbar";
 import Footer from './Footer';
 import ParticlesBackgroundBlack from '../components/Styles/ParticlesBackgroundBlack';
 import emailjs from '@emailjs/browser';
+import PopUp from '../components/PopUp';
 //imagens
 import './styles.css';
 import ContatoSuport from '../assets/Img/ContatoSuport.png';
@@ -16,6 +17,8 @@ export default function Contacts() {
     //Animation's
     // const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
     // const FadeUp = batch(Fade(), Move(), Sticky());
+
+    const [buttonPopup, setButtonPopup] = useState(false);
 
     const form = useRef();
 
@@ -83,16 +86,20 @@ export default function Contacts() {
                                             </div>
                                         </div>
                                         <div className='LeftCast'>
-                                        <h4>Telefone</h4>
-                                        <input type="Phone" name="Phone" className='InputInc' placeholder='Telefone...' />
-                                    </div>
+                                            <h4>Telefone</h4>
+                                            <input type="number" name="Phone" className='InputInc' placeholder='Telefone...' />
+                                        </div>
                                         <div className='LeftCast'>
                                             <h4>Mensagem</h4>
                                             <textarea name='message' rows='4' placeholder='Mensagem...' />
                                         </div>
                                         <div className='mt-4 d-flex justify-content-center'>
-                                            <input type="submit" value="Enviar" className='Entrar'/>
+                                            <input onClick={() => setButtonPopup(true)} type="submit" value="Enviar" className='Entrar' />
                                         </div>
+                                        <PopUp trigger={buttonPopup} setTrigger={setButtonPopup}>
+                                            <h1>Enviado!</h1>
+                                            <p>Obrigado por enviar sua mensagem, entraremos em contato embreve.</p>
+                                        </PopUp>
                                     </form>
                                 </div>
                             </Animator>

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Whatsaap from '../assets/Icons/Whatsaap.png';
 import Instagram from '../assets/Icons/Instagram.png';
 import Facebook from '../assets/Icons/Facebook.png';
-import Linkedin from '../assets/Icons/Linkedin.png';
+// import Linkedin from '../assets/Icons/Linkedin.png';
 
 export default function Footer() {
     return (

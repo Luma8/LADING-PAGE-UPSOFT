@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from '../assets/logoUpsoft.png';
 
@@ -36,7 +36,7 @@ export default function Navbar() {
                     <MenuLink onClick={() => navigate('/service')}>SERVIÇOS</MenuLink>
                     {/* <MenuLink onClick={() => navigate('/port')}>PORTFÓLIO</MenuLink> */}
                     <MenuLink onClick={() => navigate('/cont')}>CONTATO</MenuLink>
-                    {/* <MenuLink onClick={() => navigate('/workUs')}>TRABALHE CONOSCO</MenuLink> */}
+                    <MenuLink onClick={() => navigate('/workUs')}>TRABALHE CONOSCO</MenuLink>
                 </Menu>
             </nav>
         </NavBarStyled>

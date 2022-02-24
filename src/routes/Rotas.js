@@ -21,9 +21,6 @@ export default function Rotas() {
             <Route path="/port" element={<Portifoil />} />
             <Route path="/cont" element={<Contact />} />
             <Route path="/WorkUs" element={<WorkUs />} />
-            <Route path="*" element={ <h1 className="text-center">
-                NOT FOUND :(
-            </h1>} />
         </Routes>
     );
 }
